@@ -1,0 +1,24 @@
+{
+  "name": "mwc/laravel-envoyer",
+  "description": "laravel 5 generators",
+  "authors": [
+    {
+      "name": "claude khedhiri",
+      "email": "claude@madewithcaffeine.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.9",
+    "illuminate/support": "5.1.*",
+    "laravel/envoy": "~1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mwc\\Generators\\": "src/"
+    }
+  },
+  "minimum-stability": "stable",
+  "require-dev": {
+    "phpspec/phpspec": "^2.3"
+  }
+}
