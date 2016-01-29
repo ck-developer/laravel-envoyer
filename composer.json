@@ -1,24 +1,41 @@
 {
-  "name": "mwc/laravel-envoyer",
-  "description": "laravel 5 generators",
-  "authors": [
-    {
-      "name": "claude khedhiri",
-      "email": "claude@madewithcaffeine.com"
-    }
-  ],
-  "require": {
-    "php": ">=5.5.9",
-    "illuminate/support": "5.1.*",
-    "laravel/envoy": "~1.0"
-  },
-  "autoload": {
-    "psr-4": {
-      "Mwc\\Generators\\": "src/"
-    }
-  },
-  "minimum-stability": "stable",
-  "require-dev": {
-    "phpspec/phpspec": "^2.3"
-  }
+    "name": "ck/laravel-envoyer",
+    "description": "Laravel 5's deployer with multi-staging",
+    "keywords": [
+        "laravel",
+        "laravel 5",
+        "l5",
+        "deployer",
+        "multi-staging"
+    ],
+    "homepage": "https://github.com/ck-developer/laravel-envoyer",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Claude Khedhiri",
+            "email": "claude@khedhiri.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/config": "5.1.*",
+        "illuminate/support": "5.1.*",
+        "laravel/envoy": "~1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.*",
+        "orchestra/testbench": "3.1.*",
+        "phpspec/phpspec": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ck\\Laravel\\Envoyer\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ck\\Laravel\\Envoyer\\Test\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev"
 }

@@ -1,13 +1,17 @@
 <?php
 
-namespace Mwc\Envoyer;
-
-use Illuminate\Support\Facades\Config;
+namespace Ck\Laravel\Envoyer\Envoyer;
 
 class Envoyer
 {
     public function __construct($stage = null)
     {
         var_dump(Config::get('envoyer.name'));
+    }
+
+
+    public function getServers()
+    {
+
     }
 }

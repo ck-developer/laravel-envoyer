@@ -1,10 +1,10 @@
 <?php
 
-namespace Mwc\Envoyer;
+namespace Ck\Laravel\Envoyer;
 
 use Illuminate\Support\ServiceProvider;
 
-class EnvoyerServiceProvider extends ServiceProvider {
+class EnvoyerService extends ServiceProvider {
 
 
     /**
@@ -13,7 +13,7 @@ class EnvoyerServiceProvider extends ServiceProvider {
     public function boot()
     {
 
-        $configPath = __DIR__ . '/../config/envoyer.php';
+        $configPath = __DIR__ . '/../deploy/envoyer.php';
 
         $this->mergeConfigFrom($configPath, 'envoyer');
 
